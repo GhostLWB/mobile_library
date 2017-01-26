@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/backgroundxml"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/backgroundxml" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="欢迎使用图书馆管理系统"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="属性"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:id="@+id/textView6"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="60dp" />
+
+        <Spinner
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:id="@+id/spinner2"
+            android:layout_alignTop="@+id/textView6"
+            android:layout_toEndOf="@+id/textView6"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="名称："
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:id="@+id/textView15"
+            android:layout_below="@+id/spinner2"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/nameAdd"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/idAdd"
+            android:layout_alignStart="@+id/spinner2"
+            android:layout_alignTop="@+id/textView15"
+            android:maxLength="7"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="编号："
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:id="@+id/textView16"
+            android:layout_below="@+id/nameAdd"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="作者："
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:id="@+id/textView17"
+            android:layout_below="@+id/idAdd"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/authorAdd"
+            android:maxLength="7"
+            android:layout_below="@+id/idAdd"
+            android:layout_alignStart="@+id/idAdd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="类别："
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:id="@+id/textView18"
+            android:layout_below="@+id/authorAdd"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/catalogAdd"
+            android:maxLength="5"
+            android:layout_below="@+id/authorAdd"
+            android:layout_alignStart="@+id/authorAdd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="页数："
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:id="@+id/pageText"
+            android:layout_below="@+id/catalogAdd"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="出版日期："
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:id="@+id/textView21"
+            android:layout_below="@+id/pageAdd"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择时间"
+            android:background="#f5eff6"
+            android:id="@+id/timeSelectAdd"
+            android:layout_alignBottom="@+id/publishDataAdd"
+            android:layout_toEndOf="@+id/publishDataAdd" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addBooksButtonAdd"
+            android:background="@drawable/add_button"
+            android:layout_below="@+id/publishDataAdd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp" />
+
+        <TextView
+            android:id="@+id/pageEndAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/pageAdd"
+            android:layout_toEndOf="@+id/catalogAdd"
+            android:layout_toRightOf="@+id/pageAdd"
+            android:text="页"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/idAdd"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView16"
+            android:layout_alignLeft="@+id/spinner2"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/pageAdd"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pageText"
+            android:layout_alignBottom="@+id/pageText"
+            android:layout_alignLeft="@+id/catalogAdd"
+            android:layout_alignStart="@+id/catalogAdd"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/publishDataAdd"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView21"
+            android:layout_alignBottom="@+id/textView21"
+            android:layout_toEndOf="@+id/textView21"
+            android:layout_toRightOf="@+id/textView21"
+            android:editable="false"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#cc3333"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:id="@+id/mainPageAdd"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/imageButton9"
+            android:background="@drawable/fir" />
+
+        <ImageButton
+            android:id="@+id/listPageAdd"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/list" />
+
+        <ImageButton
+            android:id="@+id/myPageAdd"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageButton9"
+            android:background="@drawable/my" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

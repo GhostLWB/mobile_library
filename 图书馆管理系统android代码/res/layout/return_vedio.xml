@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout 
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/backgroundxml"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="欢迎使用图书馆管理系统"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"
+            android:id="@+id/textView1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_above="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="视频名称:"
+            android:textSize="27dp"
+            android:textColor="#000000"
+            android:id="@+id/textView7" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:text="视频编号:"
+            android:textColor="#000000"
+            android:textSize="27dp"
+            android:id="@+id/textView8" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:text="出版日期:"
+            android:textColor="#000000"
+            android:textSize="27dp"
+            android:id="@+id/textView9" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="视频作者:"
+            android:textColor="#000000"
+            android:textSize="27dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/textView10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视频分类:"
+            android:textColor="#000000"
+            android:textSize="27dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/textView12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视频时长:"
+            android:textColor="#000000"
+            android:textSize="27dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/textView13" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可借状态:"
+            android:textColor="#000000"
+            android:textSize="27dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/textView14" />
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageButton11"
+            android:background="@drawable/return_button"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/backgroundxml"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:background="@drawable/fir"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/imageButton4"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/imageButton9" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/list"
+            android:id="@+id/imageButton9"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/my"
+            android:id="@+id/imageButton8"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageButton9" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

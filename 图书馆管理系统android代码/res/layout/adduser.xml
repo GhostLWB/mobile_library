@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/backgroundxml"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/backgroundxml" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="欢迎使用图书馆管理系统"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#cc3333"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/listPageUser23"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/list" />
+
+        <ImageButton
+            android:id="@+id/mainPageUser23"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/fir" />
+
+        <ImageButton
+            android:id="@+id/myPageUser"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/my" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout3" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新用户注册"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:id="@+id/textView6"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="用户名(最长8位)"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:id="@+id/textView15"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/textView6" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/userNameUser"
+            android:maxLength="8"
+            android:maxLines="1"
+            android:layout_below="@+id/textView15"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID（最长13位）"
+            android:layout_marginLeft="5dp"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:id="@+id/textView16"
+            android:layout_below="@+id/userNameUser"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/IDuser"
+            android:maxLength="13"
+            android:maxLines="1"
+            android:layout_below="@+id/textView16"
+            android:layout_toStartOf="@+id/isAvailable" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可用？"
+            android:id="@+id/isAvailable"
+            android:layout_alignBottom="@+id/IDuser"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passwordUser"
+            android:layout_below="@+id/textView17"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认密码"
+            android:layout_marginLeft="5dp"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:id="@+id/textView18"
+            android:layout_below="@+id/passwordUser"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passwordConfirmUser"
+            android:layout_below="@+id/textView18"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:id="@+id/registerUser"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/passwordConfirmUser"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="114dp"
+            android:background="@drawable/adduser" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/IDuser"
+            android:text="密码（最长8位）"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

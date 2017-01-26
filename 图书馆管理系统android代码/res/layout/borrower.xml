@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout 
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/backgroundxml"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="欢迎使用图书馆管理系统"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"
+            android:id="@+id/textView1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_above="@+id/linearLayout"
+        android:weightSum="1">
+
+   
+        <TextView
+            android:id="@+id/userNameBorList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="读者名称:"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/borrowBorr111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_borrow1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="已经借到的书："
+            android:textSize="20dp" />
+
+        <ListView
+            android:id="@+id/booksBorrowedList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/backgroundxml"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:background="@drawable/fir"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/mainPageBorrower"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/imageButton9" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/list"
+            android:id="@+id/listPageBorrower"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:id="@+id/myPageBorrower"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageButton9"
+            android:background="@drawable/my" />
+
+    </RelativeLayout>
+    
+
+</RelativeLayout>

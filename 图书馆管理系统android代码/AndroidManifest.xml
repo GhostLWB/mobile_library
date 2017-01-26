@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mobilelibrary2333"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.mobilelibrary2333.Activity_Welcome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mobilelibrary2333.ActivityMain"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mobilelibrary2333.MyFile"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mobilelibrary2333.Activity_Menu"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mobilelibrary2333.Activity_Search"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mobilelibrary2333.Activity_List"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mobilelibrary2333.Activity_my"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mobilelibrary2333.Activity_test"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mobilelibrary2333.Activity_add"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mobilelibrary2333.Myfile"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mobilelibrary2333.CommuninateWithFile"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mobilelibrary2333.Activity_return"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mobilelibrary2333.Activity_borrower"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mobilelibrary2333.Activity_User"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.example.mobilelibrary2333.Activity_BookDetail"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.example.mobilelibrary2333.Activity_Video"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name="com.example.mobilelibrary2333.Activity_BookDetailForBorrow"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.example.mobilelibrary2333.Activity_VideoDetail"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mobilelibrary2333.Activity_VideoDetailForBorrow"
+            android:label="@string/app_name" >
+        </activity>
+          <activity
+            android:name="com.example.mobilelibrary2333.Activity_borrowerReturn"
+            android:label="@string/app_name" >
+        </activity>
+        
+        
+        
+    </application>
+
+</manifest>

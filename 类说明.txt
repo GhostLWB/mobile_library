@@ -1,0 +1,115 @@
+BorrowedAccountList（借阅者清单）
+
+public BorrowedAccountList() throws Exception   构造方法，
+public String toString()  打印借阅者清单
+public void addBorrowerAccount(BorrowerAccount borrowedAccount) 添加借阅者对象
+public boolean removeBorrowerAccount(String ID)  移除借阅者对象
+public BorrowerAccount searchBorrowerAccountByID(String ID)  根据ID查找借阅者
+public void writeBorrowerAccountToFile() throws Exception  将借阅者清单写入文件
+public boolean borrowerLogin(String ID,String passWord)   借阅者登陆
+
+
+
+
+BorrowedItem（借书清单）
+
+public BorrowedItem(String initialID) throws Exception   构造方法，完成对borrowedItems的初始化
+public String getID()  获取该清单借阅者ID
+public String toString()  打印该借书清单
+public void addItem(Item item)   添加书目项到借书清单
+public boolean removeItem(String code) throws Exception  从借书清单中移除该书
+public Vector<Item> searchItem(String itemName)   根据书名查找借书清单中的一系列书
+public void writeBorrowedItemsToFile() throws Exception  将借书清单写入文件中
+
+
+MatchCatalogeWithStoredItems（将类别与存储文件联系起来）（单例模式）
+public String getMacthedPath(String cataloge)  输入 类别 返回该类别的存储地址
+public boolean hasACAtaloge(String cataloge) 判断该类别是否已经存在
+public boolean isEmpty()  判断类别是否为空
+public void addCatalogeAndPath(String cataloge)   增加一个类别和对应路径
+public String toString()  打印类别清单
+public void writeCatalogeAndPathToFile() throws Exception 将类别清单写入文件
+
+
+
+MatchIDWithBorrowerItem（将ID与借书清单文件地址联系起来）（单列模式）
+public String getMacthedPath(String ID) throws Exception   输入ID返回一个与该ID对应的书目清单存储的地址
+public boolean isEmpty()throws Exception  判断是否为空
+public void addIDWithPath(String ID)  添加一个与ID匹配文件的地址
+public String toString() 打印
+public void WriteDataToFile() throws Exception  写入文件
+
+
+
+StoredItems（书目清单）按类别分
+public StoredItems(String initialCataloge) throws Exception  构造方法  传入类名，构造一个在该类名下的storeItem（必须保证类名存在）
+public String getCataloge()  获取当前类别
+public String toString()  打印书目清单
+public void addItem(Item item) 往书目清单中加入书目项
+public boolean removeItem(String ID)   根据编码移除图书
+public Vector<Item> searchItem(String itemName)  查找名字相同的所有书目项
+public void writeStoredItemsToFile() throws Exception  将书目清单写入文件
+public boolean isEmpty()  判断书目是否为空
+public boolean borrowBook(String code)throws Exception  输入编码，将该书目项的可借与否
+public boolean returnBook(String code) throws Exception  输入编码，将该书目项的可借设为是
+
+
+
+SuperAccountList（管理员清单）
+public SuperAccountList() throws Exception   构造方法，初始化superAccountList
+public String toString()   把管理员清单打印
+public void addSuperAccount(SuperAccount superAccount)   增加管理员到管理员清单
+public boolean removeSuperAccount(String ID)   给定ID，将特定的管理员去掉
+public SuperAccount searchAccountByName(String superAccountName)   根据用户名查找特定管理员账户
+public SuperAccount searchAccountByID(String ID)    根据特定ID查找特定的管理员
+public void writeSuperAccountToFile() throws Exception   将管理员清单写入文件中
+
+
+
+ItemFactory（工厂类，用来制造storeItem类和BorrowedItem类）
+public StoredItems makeStoreItem(String cataloge) throws Exception    制造一个storeItem对象
+public BorrowedItem makeBorrowedItem(String ID) throws Exception  制造一个BorrowedItem对象
+
+
+
+
+CodeList（确保一个书目项只有一个编号）
+public CodeList()throws Exception   构造方法，初始化vector
+public boolean hasCode(String initialcode)    判断该编号是否已经存在
+public void addCode(String code)   添加一个编号，增加一个书目项就将该code添加入
+public String toString()   将codeList打印
+public void writeDataToFile()throws Exception    将codeList写入文件中
+
+
+CommuninateWithFile（与底层进行交流的类，读取文件）
+public CommuninateWithFile(String initalFilename)   构造方法，需要传入一个文件名
+public String getFilename()   获取该文件名
+public void setFilename(String newFilename)      修改文件名
+public String readDataFromFile() throws Exception   从文件中读取数据
+public void writeDataToFile(String text,boolean append) throws Exception 写入文件（append为false从头开始写入,append为true从末尾开始写）
+public void writeDataToFile(String text)throws Exception  写入文件，覆盖写入
+
+
+
+MakeAccountFromString（将一行内容转化为对应的账号）
+public static BorrowerAccount getBorrowerAccount(String textLine)  传入一行转化为BorrowerAccount对象
+public static SuperAccount getSuperAccount(String textLine)  传入一行转化为SuperAccount对象
+
+
+MakeItemFromString（将一行内容转化为对应的Item对象）
+public static Item makeItemFromString(String textLine)     传入一行转化为Item对
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
